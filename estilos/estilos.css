@@ -1,0 +1,110 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    background-color: rgb(0, 0, 0);
+}
+#bienvenida,#footer{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: inset;
+    margin: 5%;
+    padding: 1%;
+    animation: sombra 10s infinite;
+}
+.footer{
+    left: 50vw;
+    top: 50vh;
+    /*display: inline-flex;  */ 
+}
+#footer{    
+    margin: 4em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-210px, -49px);
+}
+
+@keyframes sombra{
+    0%{
+        text-shadow: rgb(234, 255, 0) 2px 0 5px;
+    }
+    25%{
+        text-shadow: rgb(0, 255, 64) 2px 0 5px;
+    }
+    50%{
+        text-shadow: rgb(13, 0, 255) 2px 0 10px;
+    }
+    75%{
+        text-shadow: rgb(255, 0, 238) 2px 0 5px;
+    }
+    100%{
+        text-shadow: rgb(234, 255, 0) 2px 0 5px;
+    }
+}
+@keyframes color{
+    0%{
+        color: rgb(101, 108, 67);
+    }
+    25%{
+        color: rgb(62, 104, 71);
+    }
+    50%{
+        color: rgb(75, 73, 114);
+    }
+    75%{
+        color: rgb(114, 72, 112);
+    }
+    100%{
+        color: rgb(108, 112, 64);
+    }
+}
+#aLeer{
+    text-align: center;
+    font-size: xx-large;
+}
+.boton{
+    border-radius: 25% 30%;
+    border-color: rgba(0, 0, 128, 0);
+    font-size: xx-large;
+    padding: 1%;
+    box-shadow: 1px 1px 3px rgb(55, 55, 55);
+    animation: color 10s infinite;
+    background: rgba(255, 255, 255, 0.088);
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+.robot{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+#bot{
+    padding: 2px;
+    position: sticky;
+    width: 23em;
+    height: 15em;
+    filter: drop-shadow(0 2px 5px rgba(255, 251, 169, 0.815));
+    z-index: -1;
+}
+#texto{
+    text-shadow: rgb(234, 255, 0) 2px 0 5px;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(15, 27, 38);
+    height: 15vh;
+    width: 50vw;
+    size-adjust: 20%;
+    background: rgba(120, 125, 20, 0.5);
+}
+canvas{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:-0.05vh ;
+    z-index: -2 ;
+    filter: blur(2px);
+}

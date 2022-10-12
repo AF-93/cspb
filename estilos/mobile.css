@@ -1,0 +1,26 @@
+@media (max-width:760px) {
+    #texto{
+        text-shadow: rgb(234, 255, 0) 2px 0 5px;
+        font-size: 26px;
+        font-weight: 700;
+        color: rgb(15, 27, 38);
+        height: 5em;
+        width: 11em;
+        size-adjust: 20%;
+        background: rgba(120, 125, 20, 0.5);
+    }
+    canvas{
+        position: absolute;
+        width: 26rem;
+        height: 45.1rem;
+        z-index: -2 ;
+        filter: blur(2px);
+    }
+    #footer{
+        width: 85vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+}
